@@ -1,0 +1,175 @@
+
+<!--main.html (main Page)-->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Background Video with Music</title>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+		}
+		.video-container {
+			position: absolute;
+			font-family : monospace
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			overflow: hidden;
+		}
+		.video-container video {
+			min-width: 100%;
+			min-height: 100%;
+			object-fit: cover;
+		}
+		.content {
+			position: relative;
+			z-index: 1;
+			color: #fff;
+			text-align: center;
+			padding: 20px;
+		}
+	{
+	<style>
+		.circular-text {
+			width: 200px;
+			height: 200px;
+			border-radius: 50%;
+			background-color: #f0f0f0;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-size: 24px;
+			font-weight: monospace;
+			color: #333;
+		}
+	</style>
+</head>
+<body>
+
+	
+	
+
+	</style>
+</head>
+<body>
+	<div class="video-container">
+		<video autoplay loop muted id="video">
+			<source src="background-video1.mp4" type="video/mp4">
+		</video>
+	</div>
+	<audio autoplay loop id="audio">
+		<source src="background-music.mp3" type="audio/mp3">
+	</audio>
+	<div class="content">
+		<h3>WELLCOME TO WEBSITE</h3>
+		<p>This is a sample website with a background video and music.</p>
+	</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Account Info in Top Right</title>
+<style>
+  /* Style for the top right corner container */
+  .account-container {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    font-family: Monospace;
+    z-index: 1000;
+  }
+
+  /* Style for the clickable account info */
+  .account-info {
+    cursor: pointer;
+    padding: 8px 12px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 4px;
+    user-select: none;
+  }
+
+  /* Style for the dropdown menu */
+  .menu {
+    display: none; /* Hidden by default */
+    position: absolute;
+    right: 0;
+    margin-top: 5px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    min-width: 280px;
+    box-shadow: 0 2px 8px rgba(2.0,5,0.2);
+  }
+
+  /* Style for menu items */
+  .menu a {
+    display: block;
+    padding: 10px;
+    color: #333;
+    text-decoration: none;
+  }
+
+  /* Hover effect for menu items */
+  .menu a:hover {
+    background-color: #f0f0f0;
+  }
+</style>
+</head>
+<body>
+
+<div class="account-container">
+  <!-- The clickable account info -->
+  <div class="account-info" id="accountBtn">Account Info</div>
+
+  <!-- The dropdown menu -->
+  <div class="menu" id="accountMenu">
+    <a href="mailto:support@example.com">Email</a>
+    <a href="tel:1234567890">Contact Customer Service</a>
+  </div>
+</div>
+
+<script>
+  // Toggle the menu when clicking the account info
+  document.getElementById('accountBtn').addEventListener('click', function() {
+    var menu = document.getElementById('accountMenu');
+    if (menu.style.display === 'block') {
+      menu.style.display = 'none';
+    } else {
+      menu.style.display = 'block';
+    }
+  });
+
+  // Optional: hide the menu when clicking outside
+  document.addEventListener('click', function(event) {
+    var isClickInside = document.getElementById('accountBtn').contains(event.target) || document.getElementById('accountMenu').contains(event.target);
+    if (!isClickInside) {
+      document.getElementById('accountMenu').style.display = 'none';
+    }
+  });
+</script>
+
+	
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Online Search</title>
+</head>
+<body>
+
+<h2>Search Online</h2>
+
+<form action="https://www.google.com/search" method="GET" target="_blank">
+  <!-- Search query input -->
+  <input type="text" name="q" placeholder="Search on Google" required />
+  <!-- Submit button -->
+  <button type="submit">Search</button>
+</form>
+
+</body>
+</html>
+	
